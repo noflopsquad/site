@@ -1,0 +1,145 @@
+$base-unit: 0.5em
+$box-unit: $base-unit * 24
+
+=clearfix
+  *zoom: 1
+  &:before, &:after
+    content: " "
+    display: table
+  &:after
+    clear: both
+
+=box-size($w, $h)
+  width: ($box-unit * $w) + ($base-unit * ($w - 1))
+  height: ($box-unit * $h) + ($base-unit * ($h - 1))
+
+html
+  font-family: "Quicksand"
+
+body
+  background-color: $bg-color
+  color: $contrast-color
+
+.page
+  margin: 0 auto
+  width: $box-unit * 6 + $base-unit * 5
+
+.box
+  +box-size(1, 1)
+  margin-top: $base-unit
+
+.sixteen
+  @extend .box
+  +box-size(4, 4)
+
+.two
+  @extend .box
+  +box-size(2, 1)
+
+.four-plane
+  @extend .box
+  +box-size(4, 2)
+
+.four
+  @extend .box
+  +box-size(2, 2)
+
+.totally-centered
+  position: relative
+  top: 50%
+  transform: translateY(-50%)
+  text-align: center
+
+.section-header
+  @extend .box
+  +box-size(6, 0.5)
+  span
+    font-size: 5 * $base-unit
+
+.bordered
+  border: 1px dotted $contrast-color
+
+.group-1
+  +clearfix
+  .sixteen
+    float: left
+    .we
+      @extend .totally-centered
+      font-size: 20 * $base-unit
+      opacity: 0.6
+  .two
+    margin-left: $base-unit
+    float: left
+    text-align: center
+    img
+      @extend .totally-centered
+
+=leftimg
+  +clearfix
+  .four-plane
+    float: left
+    margin-left: $base-unit
+  .four
+    float: left
+
+=rightimg
+  +clearfix
+  .four-plane
+    float: left
+  .four
+    float: left
+    margin-left: $base-unit
+
+.principles
+  img
+    @extend .totally-centered
+  p
+    line-height: 150%
+    padding: 2 * $base-unit
+    opacity: 0.6
+    font-size: 3 * $base-unit
+  .reflect
+    +leftimg
+  .talk
+    +rightimg
+  .launch
+    +leftimg
+  .transparency
+    +rightimg
+
+.team
+  +clearfix
+
+=person
+  color: $bg-color
+  background-color: #151515
+  float: left
+  margin-left: $base-unit
+  &:first-child
+    margin-left: 0
+  text-align: center
+  img
+    margin-top: 2 * $base-unit
+    border-radius: 50%
+    width: 50%
+  .name
+    margin-top: 2 * $base-unit 
+    font-size: 4 * $base-unit
+  p
+    margin-left: $base-unit
+    margin-right: $base-unit
+
+.group-21
+  +clearfix
+  .four
+    +person
+
+.group-22
+  +clearfix
+  .four
+    +person
+
+.group-23
+  +clearfix
+  .four
+    +person

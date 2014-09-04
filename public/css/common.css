@@ -1,0 +1,69 @@
+/*
+Syntax error: Undefined variable: "$bg-color".
+        on line 20 of public/css/sass/common.sass
+
+15: 
+16: html
+17:   font-family: "Quicksand"
+18: 
+19: body
+20:   background-color: $bg-color
+21:   color: $contrast-color
+22: 
+23: .page
+24:   margin: 0 auto
+25:   width: $box-unit * 6 + $base-unit * 5
+
+Backtrace:
+public/css/sass/common.sass:20
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/script/variable.rb:49:in `_perform'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/script/node.rb:40:in `perform'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/sass-3.2.19/lib/sass/plugin/rack.rb:51:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/olareoun/.rvm/gems/ruby-1.9.3-p429/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/olareoun/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+/Users/olareoun/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+/Users/olareoun/.rvm/rubies/ruby-1.9.3-p429/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$bg-color\".\A         on line 20 of public/css/sass/common.sass\A \A 15: \A 16: html\A 17:   font-family: \"Quicksand\"\A 18: \A 19: body\A 20:   background-color: $bg-color\A 21:   color: $contrast-color\A 22: \A 23: .page\A 24:   margin: 0 auto\A 25:   width: $box-unit * 6 + $base-unit * 5"; }
