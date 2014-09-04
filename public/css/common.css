@@ -10,9 +10,9 @@ Syntax error: Undefined variable: "$bg-color".
 20:   background-color: $bg-color
 21:   color: $contrast-color
 22: 
-23: .page
-24:   margin: 0 auto
-25:   width: $box-unit * 6 + $base-unit * 5
+23: .colors
+24:   position: fixed
+25: 
 
 Backtrace:
 public/css/sass/common.sass:20
@@ -66,4 +66,4 @@ public/css/sass/common.sass:20
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$bg-color\".\A         on line 20 of public/css/sass/common.sass\A \A 15: \A 16: html\A 17:   font-family: \"Quicksand\"\A 18: \A 19: body\A 20:   background-color: $bg-color\A 21:   color: $contrast-color\A 22: \A 23: .page\A 24:   margin: 0 auto\A 25:   width: $box-unit * 6 + $base-unit * 5"; }
+  content: "Syntax error: Undefined variable: \"$bg-color\".\A         on line 20 of public/css/sass/common.sass\A \A 15: \A 16: html\A 17:   font-family: \"Quicksand\"\A 18: \A 19: body\A 20:   background-color: $bg-color\A 21:   color: $contrast-color\A 22: \A 23: .colors\A 24:   position: fixed\A 25: "; }
